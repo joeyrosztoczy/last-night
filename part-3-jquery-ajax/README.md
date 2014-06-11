@@ -1,6 +1,6 @@
 ## Overview
 
-For this challenge, your task is add jQuery to the provided Sinatra shell for "Simple Simon Says" in the `source` direcory. See the final product in [this exciting video](http://player.vimeo.com/video/65261103). Each new color is added after the user clicks the "Click Me' button.
+For this challenge, your task is add jQuery to the provided Sinatra shell for "Simple Simon Says". See the final product in [this exciting video](http://player.vimeo.com/video/65261103). Each new color is added after the user clicks the "Click Me' button.
 
 
 ## Core
@@ -10,7 +10,7 @@ Demonstrate knowledge of jQuery Events , AJAX request and response using JSON an
 Modify the shell code to implement the following functionality:
 
 1. Clicking on the 'Click Me' button submits an AJAX request to the '/colors' route
-- return a JSON object the server with a random color and cell number
+- return a **JSON** object the server with a random color and cell number
 - change the background color of the cell number returned to the color - WITHOUT MODIFYING THE HTML
 
 ## Important

@@ -2,7 +2,7 @@
 
 For this challenge, your task is to modify the `main.css` file to style the page so that the end result looks like video below:
 
-[See this video](http://vimeo.com/69663952) for an example of the final product.
+First, mute your volumne, then [See this video](http://vimeo.com/69663952) for an example of the final product.
 
 **You should NOT need to change the markup in `index.html` to achieve the result.**
 

@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------------------------------------------
-// YOUR CODE: Create your Zoo "object literal" and Animal "constructor" and "prototypes" here.
+// YOUR CODE: Create your Zoo object and Animal constructor/prototype here.
 //------------------------------------------------------------------------------------------------------------------
 
 
