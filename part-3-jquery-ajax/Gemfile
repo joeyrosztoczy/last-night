@@ -8,14 +8,19 @@ gem 'pg'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
-gem 'shotgun'
+# Use Thin for our web server
+gem 'thin'
 
-gem 'activesupport', "~>4.1"
-gem 'activerecord', "~>4.1"
+gem 'activesupport', '~>4.1'
+gem 'activerecord', '~>4.1'
 
 gem 'rake'
 
+gem 'bcrypt'
+
 group :test do
-  gem 'faker'
+  gem 'rack-test'
   gem 'rspec'
+  gem 'nokogiri', '~> 1.6.1'
+  gem 'faker'
 end
