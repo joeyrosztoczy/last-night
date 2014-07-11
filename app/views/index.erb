@@ -1,6 +1,5 @@
 
-<div class="jumbotron vcenter" style="text-align: center;">
-  <h1>Sign In</h1>
+<div class="jumbotron" style="text-align: center; margin-top: 60px;">
 
   <% if @error %>
     <div class="errors"><%= @error %></div>
@@ -10,8 +9,9 @@
     <p><input type="email" name="email" placeholder="Email" value="<%= @email %>"></p><br>
     <p><input type="password" name="password" placeholder="Password"></p>
     <br>
-    <div class="submit"><input type="submit" value="Sign In" class="btn btn-primary btn-lg"></div>
-    <p><a href="/sign_up">Sign Up</a></p>
+    <div class="submit"><input type="submit" value="Sign In" class="btn btn-default btn-lg btn-block"></div>
+    <br><p>or</p>
+    <p><a href="/users/new">Sign Up</a></p>
   </form>
 
 </div>

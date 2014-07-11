@@ -87,3 +87,7 @@ form.quirks {
     vertical-align: middle;
     float: none;
 }
+
+input {
+  text-align: center;
+}
