@@ -1,10 +1,9 @@
  <h3> Partiers</h3>
     <ul class="list-group">
-      # NEED TO FIX THIS SHIT
-    <% Person.order(:brew_count => :desc).each do |person|%>
+    <% LastNight.where(party_id: @party.id).order(:brew_count => :desc).each do |last_night|%>
       <li class="list-group-item">
-        <span class="badge"><%= person.brew_count %></span>
-        <%= person.name %>
+        <span class="badge"><%= last_night.brew_count %></span>
+        <%= last_night.drinker.name %>
       </li>
     <% end %>
     </ul>
