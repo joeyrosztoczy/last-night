@@ -1,25 +1,26 @@
-<div class="container">
-  <h1>Sign Up</h1>
+
 
   <div id="errors"><%= erb :_model_errors, :layout => false, :locals => { :model => @user } %></div>
 
+<div class="jumbotron" style="margin-top: 60px; text-align: center;">
+   <h1>Sign Up</h1><br>
   <form id="sign-up" method="post" action="/users">
-    <label class="label" for="name">Name</label>
-    <input type="text" name="user[name]" placeholder="e.g., joe" value="<%= @user.name %>">
-    <span id="name-errors" class="errors"></span>
+
+    <p><input type="text" name="user[name]" placeholder="Partiername" value="<%= @user.name %>">
+    <span id="name-errors" class="errors"></span></p>
     <br>
 
-    <label class="label" for="email">Email</label>
-    <input type="email" name="user[email]" placeholder="e.g., me@example.com" value="<%= @user.email %>">
-    <span id="email-errors" class="errors"></span>
+    <p>
+    <input type="email" name="user[email]" placeholder="Email" value="<%= @user.email %>">
+    <span id="email-errors" class="errors"></span></p>
     <br>
 
-    <label class="label" for="password">Password</label>
-    <input type="password" name="user[password]" placeholder="6 or more characters">
-    <span id="entered_password-errors" class="errors"></span>    
+    <p><input type="password" name="user[password]" placeholder="Password">
+    <span id="entered_password-errors" class="errors"></span></p>
     <br>
 
-    <div class="submit"><input type="submit" value="Sign Up"></div>
+    <div class="submit"><input class="btn btn-default btn-lg" type="submit" value="Sign Up"></div>
   </form>
-
 </div>
+
+
