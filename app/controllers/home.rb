@@ -13,3 +13,4 @@ post '/home/delete/:party_id' do
 	@party.destroy
 	redirect 'home'
 end
+

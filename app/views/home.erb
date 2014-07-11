@@ -2,12 +2,14 @@
 <ul>
 	<% Party.all.each do |party| %>
 	<li>
-		<a href="/party/<%= party.id %>"><%= party.name %></a>
-		<span>
+		<p><%= party.name %></p>
+		<form action="/party/go" method="post">
+			<input type="hidden" name="party_id" value="<%= party.id %>">
+			<input type="submit" value="Go to Party">
+		</form> <br> 
 			<form action="home/delete/<%= party.id %>" method="post">
 				<input type="submit" value="delete">
 			</form>
-		</span>
 	</li>
 </ul>
 <% end %>

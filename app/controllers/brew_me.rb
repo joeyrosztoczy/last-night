@@ -3,6 +3,17 @@ get '/party/:party_id' do
   erb :party
 end
 
+post '/party/go' do
+	if session[:user_id]
+		@party = Party.find(params[:party_id])
+		@goer = User.find(session[:user_id])
+		LastNight.create(user_id: @goer.id, party_id: @party.id, brew_count: 0)
+		redirect "/party/#{@party.id}"
+	else 
+		redirect '/'
+	end
+end
+
 post '/brewme' do 
   @party = Party.find(params[:party_id])
   puts "in the brewme route! party id is: #{@party.id}"
