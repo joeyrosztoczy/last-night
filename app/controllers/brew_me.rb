@@ -7,7 +7,7 @@ post '/party/go' do
 	if session[:user_id]
 		@party = Party.find(params[:party_id])
 		@goer = User.find(session[:user_id])
-		LastNight.create(user_id: @goer.id, party_id: @party.id, brew_count: 0)
+		LastNight.find_or_create_by(user_id: @goer.id, party_id: @party.id, brew_count: 0)
 		redirect "/party/#{@party.id}"
 	else 
 		redirect '/'
