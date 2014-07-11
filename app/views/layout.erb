@@ -17,15 +17,12 @@
 <body class="container">
 
   <nav>
-
-    <div class="brand"><a href="/">Last Night</a></div>
+    <img id="brand-icon" src="http://students.washington.edu/bacm/RolloverWhiteBackArrow.png">
+    <div class="brand"><h2>Last Night</h2></div>
 
     <ul>
       <% if current_user %>
         <li><a id="sign-out" href="/sessions/<%= current_user.id %>">Sign Out</a></li>
-      <% else %>
-        <li><a href="/sessions/new">Sign In</a></li>
-        <li><a href="/users/new">Sign Up</a></li>
       <% end %>
     </ul>
 
