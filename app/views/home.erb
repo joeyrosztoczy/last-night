@@ -1,0 +1,8 @@
+<h1>Available Parties</h1>
+<ul>
+	<% Party.all.each do |party| %>
+	<li>
+		<a href="/party/<%= party.id %>"><%= party.name %></a>
+	</li>
+</ul>
+<% end %>
