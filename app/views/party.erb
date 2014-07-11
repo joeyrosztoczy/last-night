@@ -1,0 +1,10 @@
+<center>
+	<form id= "brew_me" action="/brewme" method="post">
+		<input type="hidden" name="party_id" value="<%= @party.id%>">
+		<input type="submit" value="Brew me" class="btn btn-primary btn-lg" >
+	</form>
+</center>
+
+<div id="partier_list">
+	<%= erb :_list_partiers%>
+</div>
