@@ -1,0 +1,20 @@
+<h1>Available Parties</h1>
+<ul>
+	<% Party.all.each do |party| %>
+	<li>
+		<a href="/party/<%= party.id %>"><%= party.name %></a>
+		<span>
+			<form action="home/delete/<%= party.id %>" method="post">
+				<input type="submit" value="delete">
+			</form>
+		</span>
+	</li>
+</ul>
+<% end %>
+<br><br>
+<h3>Create a Party</h3>
+<form action="/home/create" method="post">
+	<input type="text" name="name" placeholder="Name"><br>
+	<input type="text" name="location" placeholder="Location"><br>
+	<input type="submit" value="Make!">
+</form>
